@@ -18,9 +18,9 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function home()
+	public function index()
 	{
-		$this->load->view('home');
+		$this->load->view('index');
 	}
 
 	public function service()
@@ -43,4 +43,21 @@ class Welcome extends CI_Controller {
 
 		$this->load->view('contact');
 	}
+
+	public function contactdataget()
+	{
+		$data = array(  
+			'name'     => $this->input->post('contact-name'),  
+			'email'  => $this->input->post('contact-email'),  
+			'company'   => $this->input->post('contact-company'),  
+			'message' => $this->input->post('contact-message')  
+			); 
+			$this->load->model('MainModel');
+
+			$this->MainModel->insert_contact_information($data);
+
+		redirect(base_url("contact"));
+			
+	}
+	
 }

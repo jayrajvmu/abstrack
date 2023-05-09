@@ -7178,6 +7178,8 @@ body.op-modal-open {
     justify-content: center;
 }
 
+
+
 .axil-header.header-style-3 .axil-mainmenu.axil-sticky .header-navbar .header-logo .light-version-logo {
     display: none;
 }
@@ -10388,6 +10390,9 @@ body.op-modal-open {
 .section-padding {
     padding: 140px 0 110px;
 }
+.section-padding-bottom{
+    padding: 140px 0 50px !important;
+}
 
 @media only screen and (max-width: 1199px) {
     .section-padding {
@@ -10604,3 +10609,8 @@ body.op-modal-open {
         padding-bottom: 0;
     }
 }
+
+
+
+
+/* marquu content */

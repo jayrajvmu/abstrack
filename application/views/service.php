@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="preloader"></div>
     <!-- Preloader End Here -->
 
-    <div class="my_switcher d-none d-lg-block">
+    <!-- <div class="my_switcher d-none d-lg-block">
         <ul>
             <li title="Light Mode">
                 <a href="javascript:void(0)" class="setColor light" data-theme="light">
@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <div id="main-wrapper" class="main-wrapper">
 
@@ -82,64 +82,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                 </div>
                                 <ul class="mainmenu">
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Digital Agency</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="index-1.html">Digital Agency</a></li>
-                                            <li><a href="index-2.html">Creative Agency</a></li>
-                                            <li><a href="index-3.html">Personal Portfolio</a></li>
-                                            <li><a href="index-4.html">Home Startup</a></li>
-                                            <li><a href="index-5.html">Corporate Agency</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="<?php echo base_url(); ?>">Digital Agency</a>
+                
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Services</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-2.html">Service Two</a></li>
-                                            <li><a href="service-design.html">Service Details</a></li>
-                                        </ul>
+                                    <li >
+                                        <a href="<?php echo base_url(); ?>service">Services</a>
+                                    
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Portfolio</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="portfolio.html">Two Column</a></li>
-                                            <li><a href="portfolio-2.html">Three Column</a></li>
-                                            <li><a href="portfolio-3.html">Four Column</a></li>
-                                            <li><a href="portfolio-4.html">Three Column Width</a></li>
-                                            <li><a href="portfolio-5.html">Four Column Width</a></li>
-                                            <li><a href="single-portfolio.html">Portfolio Details</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="<?php echo base_url(); ?>portfolio">Portfolio</a>
+                                   
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Pages</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="our-office.html">Our Office</a></li>
-                                            <li><a href="case-study.html">Case Study</a></li>
-                                            <li><a href="single-case-study.html">Case Study Details</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="single-team.html">Team Details</a></li>
-                                            <li><a href="our-clients.html">Our Clients</a></li>
-                                            <li><a href="testimonial.html">Testimonial</a></li>
-                                            <li><a href="pricing-table.html">Pricing Table</a></li>
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Blog</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single-blog.html">Standard Post</a></li>
-                                            <li><a href="single-blog-gallery.html">Gallery Post</a></li>
-                                            <li><a href="single-blog-video.html">Video Post</a></li>
-                                            <li><a href="single-blog-audio.html">Audio Post</a></li>
-                                            <li><a href="single-blog-quote.html">Quote Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                
+                                    <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
@@ -160,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <span></span>
                                     </button>
                                 </li>
-                                <li class="my_switcher d-block d-lg-none">
+                                <!-- <li class="my_switcher d-block d-lg-none">
                                     <ul>
                                         <li title="Light Mode">
                                             <a href="javascript:void(0)" class="setColor light" data-theme="light">
@@ -173,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -248,9 +204,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-29.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-design.html">Logo &amp; Branding</a></h5>
+                                    <h5 class="title">Logo &amp; Branding</h5>
                                     <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    <a href="service-design.html" class="more-btn">Find out more</a>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -260,9 +216,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-27.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-design.html">Website Design</a></h5>
+                                    <h5 class="title"> Website Design</h5>
                                     <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    <a href="service-design.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -272,10 +228,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-28.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-design.html">Mobile app design</a></h5>
+                                    <h5 class="title">Mobile app design</h5>
                                     <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                         and user friendly. </p>
-                                    <a href="service-design.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -285,9 +241,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-4.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-design.html">Graphic/print design</a></h5>
+                                    <h5 class="title">Graphic/print design</h5>
                                     <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                    <a href="service-design.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -297,9 +253,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-30.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-design.html">Video production</a></h5>
+                                    <h5 class="title"> Video production</h5>
                                     <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                    <a href="service-design.html" class="more-btn">Find out more</a>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -320,9 +276,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-31.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-development.html">Content Managment</a></h5>
+                                    <h5 class="title">Content Managment</h5>
                                     <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    <a href="service-development.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -332,9 +288,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-32.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-development.html">Mobile app development</a></h5>
+                                    <h5 class="title">Mobile app development</h5>
                                     <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    <a href="service-development.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -344,10 +300,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-33.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-development.html">eCommerce</a></h5>
+                                    <h5 class="title">eCommerce</h5>
                                     <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                         and user friendly. </p>
-                                    <a href="service-development.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -368,9 +324,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-34.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-marketing.html">SEO</a></h5>
+                                    <h5 class="title"> SEO</h5>
                                     <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    <a href="service-marketing.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -380,9 +336,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-35.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-marketing.html">Pay-per click</a></h5>
+                                    <h5 class="title"> Pay-per click</h5>
                                     <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    <a href="service-marketing.html" class="more-btn">Find out more</a>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -392,10 +348,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-36.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-marketing.html">Email marketing</a></h5>
+                                    <h5 class="title">Email marketing</h5>
                                     <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                         and user friendly. </p>
-                                    <a href="service-marketing.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -405,9 +361,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-37.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-marketing.html">Display marketing</a></h5>
+                                    <h5 class="title"> Display marketing</h5>
                                     <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                    <a href="service-marketing.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -417,9 +373,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-38.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-marketing.html">Social Media marketing</a></h5>
+                                    <h5 class="title">Social Media marketing</h5>
                                     <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                    <a href="service-marketing.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -440,9 +396,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-39.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-business.html">Digital strategy</a></h5>
+                                    <h5 class="title"> Digital strategy</h5>
                                     <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    <a href="service-business.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -452,9 +408,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-40.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-business.html">Business consulting</a></h5>
+                                    <h5 class="title"> Business consulting</h5>
                                     <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    <a href="service-business.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -464,10 +420,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-41.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-business.html">Content writing</a></h5>
+                                    <h5 class="title">Content writing</h5>
                                     <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                         and user friendly. </p>
-                                    <a href="service-business.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -477,10 +433,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-42.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-business.html">Reporting</a></h5>
+                                    <h5 class="title"> Reporting</h5>
                                     <p>We design professional looking yet Mobile Apps. Our designs are search engine
                                         and user friendly. </p>
-                                    <a href="service-business.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -501,9 +457,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-43.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-technology.html">Hosting</a></h5>
+                                    <h5 class="title"> Hosting</h5>
                                     <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    <a href="service-technology.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -513,9 +469,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-44.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-technology.html">Big data analysis</a></h5>
+                                    <h5 class="title"> Big data analysis</h5>
                                     <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    <a href="service-technology.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -536,9 +492,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-45.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-content-strategy.html">Web Audit Practices</a></h5>
+                                    <h5 class="title"> Web Audit Practices</h5>
                                     <p>industry-icon-1 Web Audit Practices A reputable marketing strategy company runs a complete digital,</p>
-                                    <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -548,9 +504,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-46.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-content-strategy.html">Marketing Flexibility</a></h5>
+                                    <h5 class="title"> Marketing Flexibility</h5>
                                     <p>Do you cater to other businesses, investors, decision-makers or consumers? A trustworthy digital</p>
-                                    <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -560,9 +516,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <img src="<?php echo base_url(); ?>assets/media/icon/icon-47.png" alt="icon">
                                 </div>
                                 <div class="content">
-                                    <h5 class="title"> <a href="service-content-strategy.html">Advertising Strategy</a></h5>
+                                    <h5 class="title">Advertising Strategy</h5>
                                     <p>Promoting your products and services online requires cutting-edge organic and paid search strategies to rise</p>
-                                    <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -580,7 +536,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="section-heading heading-light">
                         <span class="subtitle">Let's Work Together</span>
                         <h2 class="title">Need a successful project?</h2>
-                        <a href="contact.html" class="axil-btn btn-large btn-fill-white">Estimate Project</a>
+                        <a href="<?php echo base_url(); ?>contact" class="axil-btn btn-large btn-fill-white">Estimate Project</a>
                     </div>
                     <div class="thumbnail">
                         <div class="larg-thumb" data-sal="zoom-in" data-sal-duration="600" data-sal-delay="100">

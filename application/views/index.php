@@ -10,18 +10,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
-    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="assets/css/vendor/sal.css">
-    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/odometer-theme-default.css">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url(); ?>assets/media/favicon.png">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/green-audio-player.min.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/odometer-theme-default.css">
 
     <!-- Site Stylesheet -->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/app.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/marq.css">
 
 </head>
 
@@ -37,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div id="preloader"></div>
     <!-- Preloader End Here -->
 
-    <div class="my_switcher d-none d-lg-block">
+    <!-- <div class="my_switcher d-none d-lg-block">
         <ul>
             <li title="Light Mode">
                 <a href="javascript:void(0)" class="setColor light" data-theme="light">
@@ -50,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <div id="main-wrapper" class="main-wrapper">
 
@@ -80,65 +81,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
                                     </div>
                                 </div>
-                                <ul class="mainmenu">
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Digital Agency</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="index-1.html">Digital Agency</a></li>
-                                            <li><a href="index-2.html">Creative Agency</a></li>
-                                            <li><a href="index-3.html">Personal Portfolio</a></li>
-                                            <li><a href="index-4.html">Home Startup</a></li>
-                                            <li><a href="index-5.html">Corporate Agency</a></li>
-                                        </ul>
+                                <ul class="mainmenu homemainmenu">
+                                    <li>
+                                        <a href="<?php echo base_url(); ?>">Digital Agency</a>
+                
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Services</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-2.html">Service Two</a></li>
-                                            <li><a href="service-design.html">Service Details</a></li>
-                                        </ul>
+                                    <li >
+                                        <a href="<?php echo base_url(); ?>service">Services</a>
+                                    
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Portfolio</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="portfolio.html">Two Column</a></li>
-                                            <li><a href="portfolio-2.html">Three Column</a></li>
-                                            <li><a href="portfolio-3.html">Four Column</a></li>
-                                            <li><a href="portfolio-4.html">Three Column Width</a></li>
-                                            <li><a href="portfolio-5.html">Four Column Width</a></li>
-                                            <li><a href="single-portfolio.html">Portfolio Details</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="<?php echo base_url(); ?>portfolio">Portfolio</a>
+                                   
                                     </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Pages</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="our-office.html">Our Office</a></li>
-                                            <li><a href="case-study.html">Case Study</a></li>
-                                            <li><a href="single-case-study.html">Case Study Details</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="single-team.html">Team Details</a></li>
-                                            <li><a href="our-clients.html">Our Clients</a></li>
-                                            <li><a href="testimonial.html">Testimonial</a></li>
-                                            <li><a href="pricing-table.html">Pricing Table</a></li>
-                                            <li><a href="typography.html">Typography</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="coming-soon.html">Coming Soon</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="javascript:void(0);">Blog</a>
-                                        <ul class="axil-submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="single-blog.html">Standard Post</a></li>
-                                            <li><a href="single-blog-gallery.html">Gallery Post</a></li>
-                                            <li><a href="single-blog-video.html">Video Post</a></li>
-                                            <li><a href="single-blog-audio.html">Audio Post</a></li>
-                                            <li><a href="single-blog-quote.html">Quote Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                
+                                    <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
@@ -159,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <span></span>
                                     </button>
                                 </li>
-                                <li class="my_switcher d-block d-lg-none">
+                                <!-- <li class="my_switcher d-block d-lg-none">
                                     <ul>
                                         <li title="Light Mode">
                                             <a href="javascript:void(0)" class="setColor light" data-theme="light">
@@ -172,7 +129,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             </a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -188,7 +145,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-6">
                         <div class="banner-content" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
                             <h1 class="title">Technology &amp; design studio</h1>
-                            <a href="portfolio.html" class="axil-btn btn-fill-white btn-large">View Showcase</a>
+                            <a href="<?php echo base_url(); ?>portfolio" class="axil-btn btn-fill-white btn-large">View Showcase</a>
                         </div>
                     </div>
                 </div>
@@ -202,6 +159,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class="shape shape-6" data-sal="zoom-in" data-sal-duration="500" data-sal-delay="600"><img src="<?php echo base_url(); ?>assets/media/others/bubble-16.png" alt="Shape"></li>
                 <li class="shape shape-7" data-sal="slide-down" data-sal-duration="500" data-sal-delay="600"><img src="<?php echo base_url(); ?>assets/media/others/bubble-26.png" alt="Shape"></li>
             </ul>
+        </section>
+        <!--=====================================-->
+
+                <!--=        Brand Area Start       	=-->
+        <!--=====================================-->
+        <section class="section section-padding section-padding-bottom">
+            <div class="container">
+                <div class="section-heading heading-left">
+                    <span class="subtitle">Top Clients</span>
+                    <h2 class="title">We’ve built solutions for...</h2>
+                    <p>Design anything from simple icons to fully featured websites and applications.</p>
+                </div>
+
+</div>
+<div class="marquee">
+        <ul class="marquee-content">
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/62499f49346062929f0162c4_Mask%20group%20(7).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
+        </ul>
+      </div>
+
+     
+
+
         </section>
         <!--=====================================-->
         <!--=        Service Area Start         =-->
@@ -219,9 +210,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-1.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a href="service-design.html">Design</a></h5>
+                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Design</a></h5>
                                 <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-                                <a href="service-design.html" class="more-btn">Find out more</a>
+                                <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -231,9 +222,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-2.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a href="service-development.html">Development</a></h5>
+                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Development</a></h5>
                                 <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-                                <a href="service-development.html" class="more-btn">Find out more</a>
+                                <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -243,9 +234,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-6.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a href="service-content-strategy.html">Content strategy</a></h5>
+                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Content strategy</a></h5>
                                 <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
-                                <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+                                <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
                     </div>
@@ -493,63 +484,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </ul>
         </section>
         <!--=====================================-->
-        <!--=        Brand Area Start       	=-->
-        <!--=====================================-->
-        <section class="section section-padding bg-color-dark">
-            <div class="container">
-                <div class="section-heading heading-light-left">
-                    <span class="subtitle">Top Clients</span>
-                    <h2 class="title">We’ve built solutions for...</h2>
-                    <p>Design anything from simple icons to fully featured websites and applications.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500">
-                        <div class="brand-grid active">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-1.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="100">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-2.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="200">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-3.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-4.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="400">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-5.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="500">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-6.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="600">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-7.png" alt="Brand">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="500" data-sal-delay="700">
-                        <div class="brand-grid">
-                            <img src="<?php echo base_url(); ?>assets/media/brand/brand-8.png" alt="Brand">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="list-unstyled shape-group-10">
-                <li class="shape shape-1"><img src="<?php echo base_url(); ?>assets/media/others/line-9.png" alt="Circle"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
         <!--=        Blog Area Start       	    =-->
         <!--=====================================-->
         <section class="section section-padding-equal">
@@ -602,7 +536,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="section-heading heading-light">
                         <span class="subtitle">Let's Work Together</span>
                         <h2 class="title">Need a successful project?</h2>
-                        <a href="contact.html" class="axil-btn btn-large btn-fill-white">Estimate Project</a>
+                        <a href="<?php echo base_url(); ?>contact" class="axil-btn btn-large btn-fill-white">Estimate Project</a>
                     </div>
                     <div class="thumbnail">
                         <div class="larg-thumb" data-sal="zoom-in" data-sal-duration="600" data-sal-delay="100">
@@ -791,6 +725,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 
     <?php require('components/js.php'); ?>
+
+    <script src="<?php echo base_url(); ?>assets/js/marq.js"></script>
+<script>
+    $(function () {
+        scrollMove('.items',60 ,1 );
+    })
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
 
