@@ -55,4 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['service'] = 'welcome/service';
 $route['portfolio'] = 'welcome/portfolio';
 $route['contact'] = 'welcome/contact';
+$route['deletesubs/(:any)'] = '/welcome/deletesubs$1';
+
 
