@@ -27,11 +27,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 
 <body class="sticky-header">
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-    <a href="#main-wrapper" id="backto-top" class="back-to-top">
-        <i class="far fa-angle-double-up"></i>
+    <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+        <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
     <!-- Preloader Start Here -->
@@ -107,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <!--=        Brand Area Start       	=-->
         <!--=====================================-->
-        <section class="section section-padding section-padding-bottom">
+        <section class="section section-padding">
             <div class="container">
                 <div class="section-heading heading-left">
                     <span class="subtitle">Top Clients</span>
@@ -117,27 +118,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </div>
 
-<div class="marquee">
-        <ul class="marquee-content">
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/62499f49346062929f0162c4_Mask%20group%20(7).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-          <li><div class="featured-logo-wrapper"><img src="https://assets.website-files.com/624194472db3153002097068/6411a4a6cb32ec6e3acad739_Mask%20group%20(32).png" alt="" ></div> </li>
-        </ul>
-      </div>
+
+
+
+
+      <div class="marrqq">
+  
+    
+  <div class="wrapper">
+
+  <?php  foreach($client_logo as $IClientLogo):?>
+    <div class="box"><img src="<?php echo base_url(); ?>assets/client_logo/<?php echo $IClientLogo['client_logo'] ?>" alt="<?php echo $IClientLogo['client_name'] ?>" alt=""></div>
+    <?php endforeach;?>
+
+  </div>
+  
+</div>
+
+
 
      
 
 
         </section>
+        
         <!--=====================================-->
         <!--=        Service Area Start         =-->
         <!--=====================================-->
@@ -195,106 +199,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--=====================================-->
         <!--=        Project Area Start         =-->
         <!--=====================================-->
-        <section class="section section-padding-2 bg-color-light">
-            <div class="container">
-                <div class="section-heading heading-left">
-                    <span class="subtitle">Our Project</span>
-                    <h2 class="title">Some of our <br> finest work.</h2>
-                </div>
-                <div class="axil-isotope-wrapper">
-                    <div class="isotope-button isotope-project-btn">
-                        <button data-filter="*" class="is-checked"><span class="filter-text">All Works</span></button>
-                        <button data-filter=".branding"><span class="filter-text">Branding</span></button>
-                        <button data-filter=".mobile"><span class="filter-text">Mobile</span></button>
-                    </div>
-                    <div class="row row-35 isotope-list">
-                        <div class="col-md-6 project branding">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-1.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Creative Agency</a></h4>
-                                    <span class="subtitle">Full Branding, Website, App</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project mobile">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-2.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Digital Marketing</a></h4>
-                                    <span class="subtitle">Logo, Website & Mobile App</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project branding">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-3.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Digital Agency</a></h4>
-                                    <span class="subtitle">Website, UI/UX</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project mobile">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-4.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Social Engagement</a></h4>
-                                    <span class="subtitle">Branding, Website, IOS App</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project branding">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-5.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Plan Management</a></h4>
-                                    <span class="subtitle">Design, Development</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project mobile">
-                            <div class="project-grid">
-                                <div class="thumbnail">
-                                    <a href="single-portfolio.html">
-                                        <img src="<?php echo base_url(); ?>assets/media/project/project-6.png" alt="project">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title"><a href="single-portfolio.html">Web Application</a></h4>
-                                    <span class="subtitle">Logo, Webapp, App</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-7 list-unstyled">
-                <li class="shape shape-1"><img src="<?php echo base_url(); ?>assets/media/others/circle-2.png" alt="circle"></li>
-                <li class="shape shape-2"><img src="<?php echo base_url(); ?>assets/media/others/bubble-2.png" alt="Line"></li>
-                <li class="shape shape-3"><img src="<?php echo base_url(); ?>assets/media/others/bubble-1.png" alt="Line"></li>
-            </ul>
-        </section>
+        <?php require('components/portfoliocom.php'); ?>
         <!--=====================================-->
         <!--=        Counter Up Area Start      =-->
         <!--=====================================-->

@@ -1,11 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-if ($this->session->userdata['logged'] !== TRUE)
-{
-    redirect( base_url().'login'); //if session is not there, redirect to login page
-}
-  
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +8,7 @@ if ($this->session->userdata['logged'] !== TRUE)
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Contact Message</title>
+    <title>Abstrak | Subscriber</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -36,84 +29,49 @@ if ($this->session->userdata['logged'] !== TRUE)
 </head>
 <body>
 <div id="main-wrapper" class="main-wrapper">
-
+<a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+        <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
+    </a>
 <?php require('components/homenav.php'); ?>
 
 </div>
-<h4 class="text-align-center">Contact Message</h4>
-
-<div class="container wrap-container">
-
-
 
 
 
 
 <?php
-$count=0;
-if(count($result) != 0){
 
-foreach($result as $user):
+$imagedata=json_decode($images[0]["images"], true);
+?>
+
+<div class="container-fluid plr--30">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3">
+
+                <?php
+
+                foreach($imagedata as $imagesrc):
 
 ?>
 
+<div class="col">
+                        <div class="project-grid">
+                            <div class="thumbnail">
+                                <a href="single-portfolio.html">
+                                    <img src="<?php echo base_url(); ?>assets/our_work_image/<?php echo $imagesrc["image_name"]; ?>" alt="project">
+                                </a>
+                            </div>
+                        
+                        </div>
+                    </div>
+  <?php endforeach;
 
-<?php
-
-if($user["flag"]==0){
-    $count++;
-}
-
-?>
-
-
-<?php if($count==count($result)){ ?>
-
-    <p>No Message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-<?php if( $user['flag']=='1'){?>
-
-<div class="card text-center" style="width: 25rem;">
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $user["name"];?></h5>
-
-    <p class="card-title"><?php echo $user["email"];?></p>
-    <p class="card-title"><?php echo $user["company"];?></p>
-    <p class="card-title"><?php echo $user["message"];?></p>
-
-    <a href="<?php echo base_url('controll/deletecon/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
-  </div>
-</div>
-
-<?php }?>
-
-<?php endforeach;}
-
-else{
     ?>
-    
-    <p>No message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-</div>
+                   
+                 
+                 
+                </div>
+        
+            </div>
 
         <!--=====================================-->
         <!--=        Footer Area Start       	=-->
@@ -146,7 +104,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type:"DELETE",
-                url:'/deletecon'+id,
+                url:'/deletesubs'+id,
                 success: function(response){
                     alert("User Deleted Successfully")
                 }

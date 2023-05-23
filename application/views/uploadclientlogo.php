@@ -5,7 +5,9 @@ if ($this->session->userdata['logged'] !== TRUE)
     redirect( base_url().'login'); //if session is not there, redirect to login page
 }
   
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +17,7 @@ if ($this->session->userdata['logged'] !== TRUE)
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Contact Message</title>
+    <title>Abstrak | Client Logo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -40,8 +42,39 @@ if ($this->session->userdata['logged'] !== TRUE)
 <?php require('components/homenav.php'); ?>
 
 </div>
-<h4 class="text-align-center">Contact Message</h4>
+<h4 class="text-align-center">Upload Client Logo</h4>
 
+<?php  if($this->session->flashdata('ImageError')){?>
+
+<div class="alert alert-danger"> 
+<?php echo ($this->session->flashdata('ImageError')['ImageError']); ?>
+     </div>
+
+     <?php     } ?>
+
+<?php 
+  if($this->session->flashdata('insertlogotr')){
+ ?>
+   <div class="alert alert-success"> 
+     <?php  echo $this->session->flashdata('insertlogotr'); ?>
+     </div>
+<?php    
+} else if($this->session->flashdata('insertlogoer')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('insertlogoer'); ?>
+ </div>
+<?php } 
+
+else if($this->session->flashdata('insertlogoer2')){
+  ?>
+   <div class = "alert alert-danger">
+     <?php echo $this->session->flashdata('insertlogoer2'); ?>
+   </div>
+  <?php } 
+
+
+?>
 <div class="container wrap-container">
 
 
@@ -49,63 +82,20 @@ if ($this->session->userdata['logged'] !== TRUE)
 
 
 
-<?php
-$count=0;
-if(count($result) != 0){
 
-foreach($result as $user):
-
-?>
-
-
-<?php
-
-if($user["flag"]==0){
-    $count++;
-}
-
-?>
-
-
-<?php if($count==count($result)){ ?>
-
-    <p>No Message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-<?php if( $user['flag']=='1'){?>
-
-<div class="card text-center" style="width: 25rem;">
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $user["name"];?></h5>
-
-    <p class="card-title"><?php echo $user["email"];?></p>
-    <p class="card-title"><?php echo $user["company"];?></p>
-    <p class="card-title"><?php echo $user["message"];?></p>
-
-    <a href="<?php echo base_url('controll/deletecon/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
-  </div>
+  <form method='post' action='<?php echo base_url(); ?>controll/uploadclientlogofunc' enctype='multipart/form-data'>
+  <div class="mb-3">
+<input type="text" name="client_name" placeholder="Client Name">
 </div>
+<div class="mb-3">
+   <input type='file' name='file' >
+   </div>
+   <div class="mb-3"> 
+   <input type='submit' value='Upload' name='upload' class="btn btn-primary" />
+   </div>
 
-<?php }?>
+  </form>
 
-<?php endforeach;}
-
-else{
-    ?>
-    
-    <p>No message Avalable</p>
-
-<?php } ?>
 
 
 
@@ -146,7 +136,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type:"DELETE",
-                url:'/deletecon'+id,
+                url:'/deleteclientlogo'+id,
                 success: function(response){
                     alert("User Deleted Successfully")
                 }

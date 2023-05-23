@@ -31,8 +31,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-    <a href="#main-wrapper" id="backto-top" class="back-to-top">
-        <i class="far fa-angle-double-up"></i>
+      <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+        <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
     <!-- Preloader Start Here -->
@@ -65,9 +65,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="index-1.html"><img class="light-version-logo" src="assets/media/logo.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="dark-version-logo" src="assets/media/logo-3.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="sticky-logo" src="assets/media/logo-2.svg" alt="logo"></a>
+                            <a href="index-1.html"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.svg" alt="logo"></a>
+                            <a href="index-1.html"><img class="dark-version-logo" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="logo"></a>
+                            <a href="index-1.html"><img class="sticky-logo" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -76,8 +76,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
                                             <a href="index-1.html">
-                                                <img class="light-mode" src="assets/media/logo-2.svg" alt="Site Logo">
-                                                <img class="dark-mode" src="assets/media/logo-3.svg" alt="Site Logo">
+                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="Site Logo">
+                                                <img class="dark-mode" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="Site Logo">
                                             </a>
                                         </div>
                                         <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
@@ -153,13 +153,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <ul class="shape-group-8 list-unstyled">
                 <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
-                    <img src="assets/media/others/bubble-9.png" alt="Bubble">
+                    <img src="<?php echo base_url(); ?>assets/media/others/bubble-9.png" alt="Bubble">
                 </li>
                 <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
-                    <img src="assets/media/others/bubble-17.png" alt="Bubble">
+                    <img src="<?php echo base_url(); ?>assets/media/others/bubble-17.png" alt="Bubble">
                 </li>
                 <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
-                    <img src="assets/media/others/line-4.png" alt="Line">
+                    <img src="<?php echo base_url(); ?>assets/media/others/line-4.png" alt="Line">
                 </li>
             </ul>
         </div>
@@ -185,7 +185,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-xl-5 col-lg-6">
                         <div class="contact-form-box shadow-box mb--30">
                             <h3 class="title">Get a free Keystroke quote now</h3>
-                            <form method="POST" action="<?php echo base_url('welcome/contactdataget'); ?>">
+                            <form method="POST" action="<?php echo base_url('controll/contactdataget'); ?>">
                                 <div class="form-group">
                                     <label>Name</label>
                                     <input type="text" class="form-control" name="contact_name" required>
@@ -227,9 +227,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <ul class="list-unstyled shape-group-12">
-                <li class="shape shape-1"><img src="assets/media/others/bubble-2.png" alt="Bubble"></li>
-                <li class="shape shape-2"><img src="assets/media/others/bubble-1.png" alt="Bubble"></li>
-                <li class="shape shape-3"><img src="assets/media/others/circle-3.png" alt="Circle"></li>
+                <li class="shape shape-1"><img src="<?php echo base_url(); ?>assets/media/others/bubble-2.png" alt="Bubble"></li>
+                <li class="shape shape-2"><img src="<?php echo base_url(); ?>assets/media/others/bubble-1.png" alt="Bubble"></li>
+                <li class="shape shape-3"><img src="<?php echo base_url(); ?>assets/media/others/circle-3.png" alt="Circle"></li>
             </ul>
         </section>
 
@@ -246,7 +246,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-3 col-sm-6">
                         <div class="office-location">
                             <div class="thumbnail">
-                                <img src="assets/media/others/location-1.png" alt="Office">
+                                <img src="<?php echo base_url(); ?>assets/media/others/location-1.png" alt="Office">
                             </div>
                             <div class="content">
                                 <h4 class="title">Virginia-HQ</h4>
@@ -257,7 +257,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-3 col-sm-6">
                         <div class="office-location">
                             <div class="thumbnail">
-                                <img src="assets/media/others/location-2.png" alt="Office">
+                                <img src="<?php echo base_url(); ?>assets/media/others/location-2.png" alt="Office">
                             </div>
                             <div class="content">
                                 <h4 class="title">Nevada</h4>
@@ -268,7 +268,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-3 col-sm-6">
                         <div class="office-location">
                             <div class="thumbnail">
-                                <img src="assets/media/others/location-3.png" alt="Office">
+                                <img src="<?php echo base_url(); ?>assets/media/others/location-3.png" alt="Office">
                             </div>
                             <div class="content">
                                 <h4 class="title">Columbia</h4>
@@ -279,7 +279,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-3 col-sm-6">
                         <div class="office-location">
                             <div class="thumbnail">
-                                <img src="assets/media/others/location-4.png" alt="Office">
+                                <img src="<?php echo base_url(); ?>assets/media/others/location-4.png" alt="Office">
                             </div>
                             <div class="content">
                                 <h4 class="title">New Mexico</h4>
@@ -290,8 +290,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
             <ul class="shape-group-11 list-unstyled">
-                <li class="shape shape-1"><img src="assets/media/others/line-6.png" alt="line"></li>
-                <li class="shape shape-2"><img src="assets/media/others/circle-3.png" alt="line"></li>
+                <li class="shape shape-1"><img src="<?php echo base_url(); ?>assets/media/others/line-6.png" alt="line"></li>
+                <li class="shape shape-2"><img src="<?php echo base_url(); ?>assets/media/others/circle-3.png" alt="line"></li>
             </ul>
         </section>
         <!--=====================================-->

@@ -81,19 +81,19 @@
 
         axilBackToTop: function() {
             var btn = $('#backto-top');
-            $(window).on('scroll', function() {
-                if ($(window).scrollTop() > 300) {
+            $(window).on('load', function() {
+                // if ($(window).scrollTop() > 300) {
                     btn.addClass('show');
-                } else {
-                    btn.removeClass('show');
-                }
+                // } else {
+                //     btn.removeClass('show');
+                // }
             });
-            btn.on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop: 0
-                }, '300');
-            });
+            // btn.on('click', function(e) {
+            //     e.preventDefault();
+            //     $('html, body').animate({
+            //         scrollTop: 0
+            //     }, '300');
+            // });
         },
 
         themeColorSet: function() {

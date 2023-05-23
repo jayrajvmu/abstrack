@@ -5,7 +5,9 @@ if ($this->session->userdata['logged'] !== TRUE)
     redirect( base_url().'login'); //if session is not there, redirect to login page
 }
   
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +17,7 @@ if ($this->session->userdata['logged'] !== TRUE)
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Contact Message</title>
+    <title>Abstrak | Post</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -40,8 +42,31 @@ if ($this->session->userdata['logged'] !== TRUE)
 <?php require('components/homenav.php'); ?>
 
 </div>
-<h4 class="text-align-center">Contact Message</h4>
+<h4 class="text-align-center">Upload Post</h4>
 
+<?php 
+  if($this->session->flashdata('addposttr')){
+ ?>
+   <div class="alert alert-success"> 
+     <?php  echo $this->session->flashdata('addposttr'); ?>
+     </div>
+<?php    
+} else if($this->session->flashdata('addposter')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('addposter'); ?>
+ </div>
+<?php } 
+
+else if($this->session->flashdata('addposter2')){
+  ?>
+   <div class = "alert alert-danger">
+     <?php echo $this->session->flashdata('addposter2'); ?>
+   </div>
+  <?php } 
+
+
+?>
 <div class="container wrap-container">
 
 
@@ -49,63 +74,50 @@ if ($this->session->userdata['logged'] !== TRUE)
 
 
 
-<?php
-$count=0;
-if(count($result) != 0){
 
-foreach($result as $user):
+  <form method='post' action='<?php echo base_url(); ?>controll/multiple_files' enctype='multipart/form-data'>
+  <div class="mb-3">
+  <label for="name" class="form-label">Name</label>
+
+<input type="text" name="name" placeholder="Post Name" id="name" required>
+</div>
+<div class="mb-3">
+<label for="name" class="form-label">Category</label>
+
+<select class="form-select" aria-label="Default select example" name="category" required>
+
+  <?php   
+foreach($category as $categorydata):
 
 ?>
 
+  <option value="  <?php echo $categorydata['category_name'] ?>"> <?php echo $categorydata['category_name'] ?></option>
 
-<?php
+  <?php endforeach;
 
-if($user["flag"]==0){
-    $count++;
-}
-
-?>
-
-
-<?php if($count==count($result)){ ?>
-
-    <p>No Message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-<?php if( $user['flag']=='1'){?>
-
-<div class="card text-center" style="width: 25rem;">
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $user["name"];?></h5>
-
-    <p class="card-title"><?php echo $user["email"];?></p>
-    <p class="card-title"><?php echo $user["company"];?></p>
-    <p class="card-title"><?php echo $user["message"];?></p>
-
-    <a href="<?php echo base_url('controll/deletecon/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
-  </div>
+    ?>
+</select>
 </div>
 
-<?php }?>
+<div class="mb-3">
+<label for="thump" class="form-label">Thumpnail</label>
 
-<?php endforeach;}
+<input type="file" name="thump" class="form-control" id="thump" required/>
+   </div>
 
-else{
-    ?>
-    
-    <p>No message Avalable</p>
 
-<?php } ?>
+
+<div class="mb-3">
+<label for="work" class="form-label">Our Works</label>
+
+<input type="file" multiple="multiple" name="image_name[]" class="form-control" id="work" required />
+   </div>
+   <div class="mb-3"> 
+   <input type='submit' value='Upload' name='upload' class="btn btn-primary" />
+   </div>
+
+  </form>
+
 
 
 
@@ -146,7 +158,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type:"DELETE",
-                url:'/deletecon'+id,
+                url:'/deleteclientlogo'+id,
                 success: function(response){
                     alert("User Deleted Successfully")
                 }

@@ -22,7 +22,7 @@
                                     <h2 class="title">Get in touch!</h2>
                                     <p>Fusce varius, dolor tempor interdum tristique, dui urna bib
                                         endum magna, ut ullamcorper purus</p>
-                                    <form method="POST" action="<?php echo base_url('welcome/subscriberget'); ?>" >
+                                    <form method="POST" action="<?php echo base_url('controll/subscriberget'); ?>" >
                                         <div class="input-group">
                                             <input type="email" class="form-control" placeholder="Email address" name="subs_email" required>
                                             <button class="subscribe-btn" type="submit">Subscribe</button>

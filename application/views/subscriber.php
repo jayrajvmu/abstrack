@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+if ($this->session->userdata['logged'] !== TRUE)
+{
+    redirect( base_url().'login'); //if session is not there, redirect to login page
+}
+  
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/bootstrap.min.css">
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Creative Agency</title>
+    <title>Abstrak | Subscriber</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -72,20 +78,11 @@ if($user["flag"]==0){
 
 ?>
 
-
 <?php if($count==count($result)){ ?>
 
     <p>No Users Avalable</p>
 
 <?php } ?>
-
-
-
-
-
-
-
-
 
 
 <?php if( $user['flag']=='1'){?>
@@ -94,7 +91,7 @@ if($user["flag"]==0){
   <div class="card-body">
     <h5 class="card-title"><?php echo $user["email"];?></h5>
 
-    <a href="<?php echo base_url('welcome/deletesubs/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
+    <a href="<?php echo base_url('controll/deletesubs/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
   </div>
 </div>
 

@@ -29,8 +29,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-    <a href="#main-wrapper" id="backto-top" class="back-to-top">
-        <i class="far fa-angle-double-up"></i>
+      <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+        <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
     <!-- Preloader Start Here -->

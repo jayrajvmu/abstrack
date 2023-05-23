@@ -11,11 +11,12 @@ if ($this->session->userdata['logged'] !== TRUE)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/bootstrap.min.css">
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Contact Message</title>
+    <title>Abstrak | Client Logo</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -40,72 +41,62 @@ if ($this->session->userdata['logged'] !== TRUE)
 <?php require('components/homenav.php'); ?>
 
 </div>
-<h4 class="text-align-center">Contact Message</h4>
+<h4 class="text-align-center">Client Logo List</h4>
+<?php 
+   if($this->session->flashdata('deleteclilogotr')){
+ ?>
+   <div class="alert alert-success"> 
+     <?php  echo $this->session->flashdata('deleteclilogotr'); ?>
+     </div>
+<?php    
+} else if($this->session->flashdata('deleteclilogoer')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('deleteclilogoer'); ?>
+ </div>
+<?php } else if($this->session->flashdata('deleteclilogoer2')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('deleteclilogoer2'); ?>
+ </div>
+<?php }
 
+
+?>
 <div class="container wrap-container">
 
 
 
-
-
-
 <?php
-$count=0;
-if(count($result) != 0){
+if(count($result)==0){
+  ?>
+
+  <div>Logos Not Available</div>
+<?php   
+}else{
+
 
 foreach($result as $user):
 
 ?>
 
 
-<?php
 
-if($user["flag"]==0){
-    $count++;
-}
-
-?>
-
-
-<?php if($count==count($result)){ ?>
-
-    <p>No Message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-<?php if( $user['flag']=='1'){?>
-
-<div class="card text-center" style="width: 25rem;">
+<div class="card text-center" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $user["name"];?></h5>
+    <h5 class="card-title"><?php echo $user["client_name"];?></h5>
+    <img class="card-body" src="<?php echo base_url(); ?>assets/client_logo/<?php echo $user['client_logo'] ?>">
 
-    <p class="card-title"><?php echo $user["email"];?></p>
-    <p class="card-title"><?php echo $user["company"];?></p>
-    <p class="card-title"><?php echo $user["message"];?></p>
-
-    <a href="<?php echo base_url('controll/deletecon/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
+    <a href="<?php echo base_url('controll/deleteclientlogo/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
   </div>
 </div>
 
-<?php }?>
 
-<?php endforeach;}
+<?php endforeach;
+}
 
-else{
     ?>
-    
-    <p>No message Avalable</p>
 
-<?php } ?>
 
 
 
@@ -146,7 +137,7 @@ $( document ).ready(function() {
 
             $.ajax({
                 type:"DELETE",
-                url:'/deletecon'+id,
+                url:'/deleteclientlogo'+id,
                 success: function(response){
                     alert("User Deleted Successfully")
                 }

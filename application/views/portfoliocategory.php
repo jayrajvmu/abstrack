@@ -11,11 +11,12 @@ if ($this->session->userdata['logged'] !== TRUE)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abstrak | Admin</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/vendor/bootstrap.min.css">
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Contact Message</title>
+    <title>Abstrak | Creative Agency</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -40,81 +41,100 @@ if ($this->session->userdata['logged'] !== TRUE)
 <?php require('components/homenav.php'); ?>
 
 </div>
-<h4 class="text-align-center">Contact Message</h4>
+<h4 class="text-align-center">Portfolio Category</h4>
 
+<!-- Insert Alert -->
+<?php 
+   if($this->session->flashdata('categorytrue')){
+ ?>
+   <div class="alert alert-success"> 
+     <?php  echo $this->session->flashdata('categorytrue'); ?>
+     </div>
+<?php    
+} else if($this->session->flashdata('categoryerr')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('categoryerr'); ?>
+ </div>
+<?php } ?>
+
+
+
+<!-- Delete Alert -->
+
+<?php 
+   if($this->session->flashdata('categorydeltr')){
+ ?>
+   <div class="alert alert-success"> 
+     <?php  echo $this->session->flashdata('categorydeltr'); ?>
+     </div>
+<?php    
+} else if($this->session->flashdata('categorydeler')){
+?>
+ <div class = "alert alert-danger">
+   <?php echo $this->session->flashdata('categorydeler'); ?>
+ </div>
+<?php } ?>
 <div class="container wrap-container">
 
 
 
 
+<form method="POST" action="<?php echo base_url('controll/addportfoliocategory'); ?>">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="category_name" >
+                                  
+                                </div>
+                               
+                                
+                                <div class="form-group">
+                                    <input type="submit" name="submit" value="Submit" class=" btn-fill-primary btn-fluid btn-primary"/>
+                                </div>
+                            </form>
 
+
+
+
+
+
+
+
+</div>
+<h6 class="text-align-center">Available Category</h6>
+
+<div class="container wrap-container">
 
 <?php
-$count=0;
-if(count($result) != 0){
 
-foreach($result as $user):
+if(count($category)==0){
+    ?>
+
+    <div>No Categoty Available</div>
+ <?php   
+}else{
+
+
+foreach($category as $categorydata):
 
 ?>
 
 
-<?php
 
-if($user["flag"]==0){
-    $count++;
-}
-
-?>
-
-
-<?php if($count==count($result)){ ?>
-
-    <p>No Message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
-
-
-
-<?php if( $user['flag']=='1'){?>
-
-<div class="card text-center" style="width: 25rem;">
+<div class="card text-center" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title"><?php echo $user["name"];?></h5>
+    <h5 class="card-title"><?php echo $categorydata["category_name"];?></h5>
 
-    <p class="card-title"><?php echo $user["email"];?></p>
-    <p class="card-title"><?php echo $user["company"];?></p>
-    <p class="card-title"><?php echo $user["message"];?></p>
-
-    <a href="<?php echo base_url('controll/deletecon/'. $user['id']); ?>" value="<?php echo $user["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
+    <a href="<?php echo base_url('controll/deletecategory/'. $categorydata['id']); ?>" value="<?php echo $categorydata["id"];?>" class="btn btn-primary confirm_delete">Delete</a>
   </div>
 </div>
 
-<?php }?>
 
-<?php endforeach;}
+<?php endforeach;
+}
 
-else{
     ?>
-    
-    <p>No message Avalable</p>
-
-<?php } ?>
-
-
-
-
-
-
-
 </div>
-
         <!--=====================================-->
         <!--=        Footer Area Start       	=-->
         <!--=====================================-->
@@ -146,9 +166,9 @@ $( document ).ready(function() {
 
             $.ajax({
                 type:"DELETE",
-                url:'/deletecon'+id,
+                url:'/deletecategory'+id,
                 success: function(response){
-                    alert("User Deleted Successfully")
+                    alert("Category Deleted Successfully")
                 }
             })
         }
@@ -156,7 +176,5 @@ $( document ).ready(function() {
 });
 
 </script>
-<?php require('components/js.php'); ?>
-
 </body>
 </html>

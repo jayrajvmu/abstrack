@@ -647,18 +647,18 @@ input {
     bottom: -40px;
     right: 40px;
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     line-height: 50px;
-    background: var(--color-primary);
+    /* background: var(--color-primary); */
     color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     opacity: 0;
-    -webkit-transform: scale(0.3);
+    /* -webkit-transform: scale(0.3);
     -ms-transform: scale(0.3);
-    transform: scale(0.3);
+    transform: scale(0.3); */
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 9;
     -webkit-transition: all 0.3s;
@@ -10610,5 +10610,8 @@ body.op-modal-open {
     }
 }
 
+.alert p {
+    margin: 0px;
+}
 
 
