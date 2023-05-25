@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Service</title>
+    <title>Designbees | Service</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-      <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+      <a href="https://wa.me/9943945548" id="backto-top" class="back-to-top">
         <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
@@ -63,9 +63,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="index-1.html"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="dark-version-logo" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="sticky-logo" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="logo"></a>
+                            <a href="<?php echo base_url(); ?>"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
+                            <a href="<?php echo base_url(); ?>"><img class="sticky-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -73,12 +72,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="d-block d-lg-none">
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
-                                            <a href="index-1.html">
-                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="Site Logo">
-                                                <img class="dark-mode" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="Site Logo">
+                                            <a href="<?php echo base_url(); ?>">
+                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo.png" alt="Site Logo">
                                             </a>
                                         </div>
-                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times custom-btn-menu"></i></button>
                                     </div>
                                 </div>
                                 <ul class="mainmenu">
@@ -95,7 +93,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                    
                                     </li>
                                 
-                                    <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                                    <li class="contactnone"><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                                     <li class="downloadcolor"><a href="<?php echo base_url(); ?>assets/media/pdf/Ourworks.pdf" download >Download Ourservice</a></li>
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
@@ -170,23 +169,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <ul class="nav nav-pills">
                         <li class="nav-item">
-                            <a class="nav-link" href="#section1">Design</a>
+                            <a class="nav-link" href="#section1">Graphic Design</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section2">Development</a>
+                            <a class="nav-link" href="#section2">Digital Marketing</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Web Design and Development</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#section3">Online Marketing</a>
+                            <a class="nav-link" href="#section4">Brand Strategy</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section4">Business</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section5">Technology</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section6">Content Strategy</a>
-                        </li>
+                    
                     </ul>
                 </div>
             </nav>
@@ -195,68 +190,87 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="section-heading heading-left">
                         <span class="subtitle">Service</span>
-                        <h2 class="title">Design</h2>
+                        <h2 class="title">Graphic Design</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-29.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Logo &amp; Branding</h5>
-                                    <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                  
-                                </div>
+               
+                              
+                                    <h5 class="title">Logo Design</h5>                                  
+                           
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-27.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Website Design</h5>
-                                    <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
+                          
+                              
+                                    <h5 class="title">Business Card Design</h5>
                                     
-                                </div>
+                              
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-28.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Mobile app design</h5>
-                                    <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                        and user friendly. </p>
-                                   
-                                </div>
+                            
+                                    <h5 class="title">Brochure Design</h5>
+                           
+                              
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-4.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Graphic/print design</h5>
-                                    <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                   
-                                </div>
+                              
+                                    <h5 class="title">Flyer Design</h5>                                   
+                                
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-30.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Video production</h5>
-                                    <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                  
-                                </div>
+                            
+                                    <h5 class="title"> Poster Design</h5>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+               
+                              
+                                    <h5 class="title">Packaging Design</h5>                                  
+                           
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                          
+                              
+                                    <h5 class="title">Infographic Design</h5>
+                                    
+                              
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                            
+                                    <h5 class="title">Illustration and Icon</h5>
+                           
+                              
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                              
+                                    <h5 class="title">Banner and Ad Design</h5>                                   
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                            
+                                    <h5 class="title"> Magazine and Book Layout</h5>
+                                
                             </div>
                         </div>
                     </div>
@@ -267,44 +281,80 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="section-heading heading-left">
                         <span class="subtitle">Service</span>
-                        <h2 class="title">Development</h2>
+                        <h2 class="title">Digital Marketing</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-31.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Content Managment</h5>
-                                    <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                   
-                                </div>
+                            
+                         
+                                    <h5 class="title">SEO</h5>
+                                 
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-32.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Mobile app development</h5>
-                                    <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    
-                                </div>
+                              
+                                    <h5 class="title">PPC Advertising</h5>
+                                   
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-33.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">eCommerce</h5>
-                                    <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                        and user friendly. </p>
-                                    
-                                </div>
+                               
+                                    <h5 class="title">Social Media Marketing</h5>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title">Content Marketing</h5>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title">Email Marketing</h5>
+                                   
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                            
+                         
+                                    <h5 class="title">Influencer Marketing</h5>
+                                 
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                              
+                                    <h5 class="title">Video Marketing</h5>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title">Mobile Marketing</h5>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title">Conversion Rate Optimization</h5>
+                                   
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title">Analytics and Reporting</h5>
+                                   
                             </div>
                         </div>
                     </div>
@@ -315,68 +365,75 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="section-heading heading-left">
                         <span class="subtitle">Service</span>
-                        <h2 class="title">Online Marketing</h2>
+                        <h2 class="title">Web Design and Development</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-34.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> SEO</h5>
-                                    <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                   
-                                </div>
-                            </div>
+                             
+                            
+                                    <h5 class="title"> Website Design (UI/UX)</h5>
+                                    
+                                    </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-35.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Pay-per click</h5>
-                                    <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                  
-                                </div>
+                              
+                                    <h5 class="title">Web Develeopment</h5>
+                                    
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-36.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Email marketing</h5>
-                                    <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                        and user friendly. </p>
+                               
+                                    <h5 class="title">CMS Integration</h5>
                                    
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-37.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Display marketing</h5>
-                                    <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                    
-                                </div>
+                             
+                                    <h5 class="title">E-Commerce</h5>
+                                  
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-38.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Social Media marketing</h5>
-                                    <p>From simple Content Management System to complex eCommerce developer, we cover it all.</p>
-                                   
-                                </div>
+                                
+                                    <h5 class="title">Custom Web Application</h5>
+                                 
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                                
+                                    <h5 class="title">Responsive Web Design</h5>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                                
+                                    <h6 class="title">Web Maintenance and Support</h6>
+                                 
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                                
+                                    <h6 class="title">Website Performance Optimization</h6>
+                                 
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                            <div class="services-grid service-style-2">
+                                
+                                    <h5 class="title">Website Security and Backup</h5>
+                                 
                             </div>
                         </div>
                     </div>
@@ -387,144 +444,91 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="section-heading heading-left">
                         <span class="subtitle">Service</span>
-                        <h2 class="title">Business</h2>
+                        <h2 class="title">Brand Strategy</h2>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-39.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Digital strategy</h5>
-                                    <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                   
-                                </div>
+                                
+                                    <h5 class="title">Brand Strategy Development</h5>
+                                
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-40.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Business consulting</h5>
-                                    <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
+                              
+                                    <h5 class="title">Brand Identity Design</h5>
                                    
-                                </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-41.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Content writing</h5>
-                                    <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                        and user friendly. </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                            <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-42.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Reporting</h5>
-                                    <p>We design professional looking yet Mobile Apps. Our designs are search engine
-                                        and user friendly. </p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Technology Service -->
-            <div class="section section-padding" id="section5">
-                <div class="container">
-                    <div class="section-heading heading-left">
-                        <span class="subtitle">Service</span>
-                        <h2 class="title">Technology</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                            <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-43.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Hosting</h5>
-                                    <p>We design professional looking yet simple Logo. Our designs are search engine and user friendly.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                            <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-44.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Big data analysis</h5>
-                                    <p>We design professional looking yet simple websites. Our designs are search engine and user friendly.</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Content strategy Service -->
-            <div class="section section-padding bg-color-light" id="section6">
-                <div class="container">
-                    <div class="section-heading heading-left">
-                        <span class="subtitle">Service</span>
-                        <h2 class="title">Content strategy</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
-                            <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-45.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Web Audit Practices</h5>
-                                    <p>industry-icon-1 Web Audit Practices A reputable marketing strategy company runs a complete digital,</p>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
-                            <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-46.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title"> Marketing Flexibility</h5>
-                                    <p>Do you cater to other businesses, investors, decision-makers or consumers? A trustworthy digital</p>
+                              
+                                    <h5 class="title">Brand Message and Voice</h5>
                                    
-                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                             <div class="services-grid service-style-2">
-                                <div class="thumbnail">
-                                    <img src="<?php echo base_url(); ?>assets/media/icon/icon-47.png" alt="icon">
-                                </div>
-                                <div class="content">
-                                    <h5 class="title">Advertising Strategy</h5>
-                                    <p>Promoting your products and services online requires cutting-edge organic and paid search strategies to rise</p>
-                                    
-                                </div>
+                               
+                                    <h5 class="title"> Brand Guidelines Creation</h5>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title"> Brand Positioning</h5>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title"> Brand Storytelling</h5>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h6 class="title"> Brand Naming & Tagline Creation</h6>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title"> Competitive Analysis</h5>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h6 class="title">Audience Research and Analysis</h6>
+                                  
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                            <div class="services-grid service-style-2">
+                               
+                                    <h5 class="title"> Brand Architecture</h5>
+                                  
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+           
+      
+    
         </div>
 
         <!--=====================================-->

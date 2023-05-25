@@ -11,7 +11,7 @@ if ($this->session->userdata['logged'] !== TRUE)
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Admin</title>
+    <title>Designbees | Admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -69,10 +69,8 @@ if ($this->session->userdata['logged'] !== TRUE)
             <div class="axil-mainmenu">
                 <div class="container">
                     <div class="header-navbar">
-                        <div class="header-logo">
-                            <a href="index-1.html"><img class="<?php echo base_url(); ?>light-version-logo" src="assets/media/logo.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="<?php echo base_url(); ?>dark-version-logo" src="assets/media/logo-3.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="<?php echo base_url(); ?>sticky-logo" src="assets/media/logo-2.svg" alt="logo"></a>
+                        <div class="header-logo logo">
+                            <a href="<?php echo base_url(); ?>"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -80,12 +78,11 @@ if ($this->session->userdata['logged'] !== TRUE)
                                 <div class="d-block d-lg-none">
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
-                                            <a href="index-1.html">
-                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="Site Logo">
-                                                <img class="dark-mode" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="Site Logo">
+                                            <a href="<?php echo base_url(); ?>">
+                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo.png" alt="Site Logo">
                                             </a>
                                         </div>
-                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times custom-btn-menu"></i></button>
                                     </div>
                                 </div>
                                 <ul class="mainmenu">

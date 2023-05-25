@@ -15,7 +15,7 @@ if ($this->session->userdata['logged'] !== TRUE)
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Subscriber</title>
+    <title>Designbees | Subscriber</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->

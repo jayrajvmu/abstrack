@@ -8,7 +8,7 @@
         <!-- Meta Data -->
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Subscriber</title>
+    <title>Designbees | Subscriber</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -29,7 +29,7 @@
 </head>
 <body>
 <div id="main-wrapper" class="main-wrapper">
-<a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+<a href="https://wa.me/9943945548" id="backto-top" class="back-to-top">
         <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 <?php require('components/homenav.php'); ?>
@@ -56,7 +56,7 @@ $imagedata=json_decode($images[0]["images"], true);
 <div class="col">
                         <div class="project-grid">
                             <div class="thumbnail">
-                                <a href="single-portfolio.html">
+                                <a href="<?php echo base_url(); ?>portfolio">
                                     <img src="<?php echo base_url(); ?>assets/our_work_image/<?php echo $imagesrc["image_name"]; ?>" alt="project">
                                 </a>
                             </div>

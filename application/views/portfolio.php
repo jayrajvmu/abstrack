@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Portfolio Two Column</title>
+    <title>Designbees | Portfolio Two Column</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-      <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+      <a href="https://wa.me/9943945548" id="backto-top" class="back-to-top">
         <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
@@ -64,9 +64,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="container">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="index-1.html"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="dark-version-logo" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="logo"></a>
-                            <a href="index-1.html"><img class="sticky-logo" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="logo"></a>
+                            <a href="<?php echo base_url(); ?>"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
+                            <a href="<?php echo base_url(); ?>"><img class="sticky-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -74,12 +73,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="d-block d-lg-none">
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
-                                            <a href="index-1.html">
-                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="Site Logo">
-                                                <img class="dark-mode" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="Site Logo">
+                                            <a href="<?php echo base_url(); ?>">
+                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo.png" alt="Site Logo">
                                             </a>
                                         </div>
-                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times custom-btn-menu"></i></button>
                                     </div>
                                 </div>
                                 <ul class="mainmenu">
@@ -97,6 +95,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
                                 
                                     <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+
+
+                                    <li class="downloadcolor"><a href="<?php echo base_url(); ?>assets/media/pdf/Ourworks.pdf" download >Download Ourservice</a></li>
+
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
@@ -144,7 +146,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="container">
                 <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
                     <h1 class="title h2">Our projects</h1>
-                    <p>A quick view of industry specific problems solved with design by the awesome team at Abstrak.</p>
+                    <p>A quick view of industry specific problems solved with design by the awesome team at Designbees.</p>
                 </div>
                 <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
                     <img class="paralax-image" src="<?php echo base_url(); ?>assets/media/banner/banner-thumb-1.png" alt="Illustration">

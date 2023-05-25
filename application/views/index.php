@@ -6,7 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Abstrak | Creative Agency</title>
+    <title>Designbees | Creative Agency</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   	<![endif]-->
-    <a href="https://wa.me/9345049165" id="backto-top" class="back-to-top">
+    <a href="https://wa.me/9943945548" id="backto-top" class="back-to-top">
         <img src="<?php echo base_url(); ?>assets/media/whatsapp.png" alt="">
     </a>
 
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </div>
                             <div class="content">
                                 <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Design</a></h5>
-                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <p>We help you translate a simple idea into an exotic Digital design transformation vision</p>
                                 <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
@@ -170,8 +170,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-2.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Development</a></h5>
-                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Technology</a></h5>
+                                <p>Comprehensive technology services that integrate digital craftsmanship and business goals.</p>
                                 <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
@@ -182,8 +182,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-6.png" alt="icon">
                             </div>
                             <div class="content">
-                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Content strategy</a></h5>
-                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <h5 class="title"> <a  href="<?php echo base_url(); ?>service" >Marketing</a></h5>
+                                <p>End-to-end performance marketing services and branding strategies of the digital world.</p>
                                 <a href="<?php echo base_url(); ?>service" class="more-btn">Find out more</a>
                             </div>
                         </div>
@@ -211,54 +211,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <p>In vel varius turpis, non dictum sem. Aenean in efficitur ipsum, in egestas ipsum. Mauris in mi ac tellus.</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                    <div class="col-lg-4 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
                         <div class="counterup-progress active">
                             <div class="icon">
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-7.png" alt="Apple">
                             </div>
                             <div class="count-number h2">
-                                <span class="number count" data-count="15">15</span>
+                                <span class="number count" data-count="3">3</span>
                                 <span class="symbol">+</span>
                             </div>
                             <h6 class="title">Years of operation</h6>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                    
+                    <div class="col-lg-4 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
                         <div class="counterup-progress">
                             <div class="icon">
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-8.png" alt="Apple">
                             </div>
                             <div class="count-number h2">
-                                <span class="number count" data-count="360">360</span>
+                                <span class="number count" data-count="80">80</span>
                                 <span class="symbol">+</span>
                             </div>
                             <h6 class="title">Projects deliverd</h6>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                    <div class="col-lg-4 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
                         <div class="counterup-progress">
                             <div class="icon">
                                 <img src="<?php echo base_url(); ?>assets/media/icon/icon-9.png" alt="Apple">
                             </div>
                             <div class="count-number h2">
-                                <span class="number count" data-count="600">600</span>
+                                <span class="number count" data-count="15">15</span>
                                 <span class="symbol">+</span>
                             </div>
                             <h6 class="title">Specialist</h6>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
-                        <div class="counterup-progress">
-                            <div class="icon">
-                                <img src="<?php echo base_url(); ?>assets/media/icon/apple.png" alt="Apple">
-                            </div>
-                            <div class="count-number h2">
-                                <span class="number count" data-count="64">64</span>
-                                <span class="symbol">+</span>
-                            </div>
-                            <h6 class="title">Years of operation</h6>
-                        </div>
-                    </div>
+                 
                 </div>
             </div>
             <ul class="list-unstyled shape-group-10">
@@ -270,112 +260,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--=====================================-->
         <!--=        Testimonial Area Start      =-->
         <!--=====================================-->
-        <section class="section section-padding">
-            <div class="container">
-                <div class="section-heading heading-left">
-                    <span class="subtitle">Testimonial</span>
-                    <h2 class="title">From getting started</h2>
-                    <p>Nulla facilisi. Nullam in magna id dolor blandit rutrum eget vulputate augue sed eu leo eget risus imperdiet.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="100">
-                        <div class="testimonial-grid active">
-                            <span class="social-media"><img src="<?php echo base_url(); ?>assets/media/icon/yelp-2.png" alt="Yelp"></span>
-                            <p>“ Donec metus lorem, vulputate
-                                at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/media/testimonial/testimonial-1.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Darrell Steward</span>
-                                    <span class="designation">Executive Chairman</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="200">
-                        <div class="testimonial-grid">
-                            <span class="social-media"><img src="<?php echo base_url(); ?>assets/media/icon/google-2.png" alt="google"></span>
-                            <p>“ Donec metus lorem, vulputate
-                                at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/media/testimonial/testimonial-2.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Savannah Nguyen</span>
-                                    <span class="designation">Executive Chairman</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="300">
-                        <div class="testimonial-grid">
-                            <span class="social-media"><img src="<?php echo base_url(); ?>assets/media/icon/fb-2.png" alt="Facebook"></span>
-                            <p>“ Donec metus lorem, vulputate
-                                at sapien sit amet, auctor iaculis lorem. In vel hendrerit nisi. Vestibulum eget risus velit. ”</p>
-                            <div class="author-info">
-                                <div class="thumb">
-                                    <img src="<?php echo base_url(); ?>assets/media/testimonial/testimonial-3.png" alt="Google Review">
-                                </div>
-                                <div class="content">
-                                    <span class="name">Floyd Miles</span>
-                                    <span class="designation">Executive Chairman</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-4 list-unstyled">
-                <li class="shape-1"><img src="<?php echo base_url(); ?>assets/media/others/bubble-1.png" alt="Bubble"></li>
-            </ul>
-        </section>
-        <!--=====================================-->
-        <!--=        Blog Area Start       	    =-->
-        <!--=====================================-->
-        <section class="section section-padding-equal">
-            <div class="container">
-                <div class="section-heading">
-                    <span class="subtitle">What's Going On</span>
-                    <h2 class="title">Latest stories</h2>
-                    <p>News From Abstrak And Around The World Of Web Design And Complete Solution of Online Digital Marketing </p>
-                </div>
-                <div class="row g-0">
-                    <div class="col-xl-6" data-sal="slide-right" data-sal-duration="800" data-sal-delay="100">
-                        <div class="blog-list active">
-                            <div class="post-thumbnail">
-                                <a href="single-blog-2.html"><img src="<?php echo base_url(); ?>assets/media/blog/blog-1.png" alt="Blog Post"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5 class="title"><a href="single-blog-2.html">How To Use a Remarketing Strategy To Get More</a></h5>
-                                <p>Demand generation is a constant struggle for any business. Each marketing strategy you employ has...</p>
-                                <a href="single-blog-2.html" class="more-btn">Learn more<i class="far fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6" data-sal="slide-left" data-sal-duration="800" data-sal-delay="100">
-                        <div class="blog-list border-start">
-                            <div class="post-thumbnail">
-                                <a href="single-blog-3.html"><img src="<?php echo base_url(); ?>assets/media/blog/blog-2.png" alt="Blog Post"></a>
-                            </div>
-                            <div class="post-content">
-                                <h5 class="title"><a href="single-blog-3.html">SEO Statistics You Should Know in 2021</a></h5>
-                                <p>Organic search has the potential to capture more than 40 percent of your gross revenue...</p>
-                                <a href="single-blog-3.html" class="more-btn">Learn more<i class="far fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <ul class="shape-group-1 list-unstyled">
-                <li class="shape shape-1"><img src="<?php echo base_url(); ?>assets/media/others/bubble-1.png" alt="bubble"></li>
-                <li class="shape shape-2"><img src="<?php echo base_url(); ?>assets/media/others/line-1.png" alt="bubble"></li>
-                <li class="shape shape-3"><img src="<?php echo base_url(); ?>assets/media/others/line-2.png" alt="bubble"></li>
-                <li class="shape shape-4"><img src="<?php echo base_url(); ?>assets/media/others/bubble-2.png" alt="bubble"></li>
-            </ul>
-        </section>
+
         <!--=====================================-->
         <!--=     Call To Action Area Start     =-->
         <!--=====================================-->

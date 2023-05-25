@@ -4,8 +4,7 @@
                 <div class="container-fluid">
                     <div class="header-navbar">
                         <div class="header-logo">
-                            <a href="<?php echo base_url(); ?>"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="logo"></a>
-                            <a href="<?php echo base_url(); ?>"><img class="dark-version-logo" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="logo"></a>
+                            <a href="<?php echo base_url(); ?>"><img class="light-version-logo" src="<?php echo base_url(); ?>assets/media/logo.png" alt="logo"></a>
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
@@ -14,8 +13,7 @@
                                     <div class="mobile-nav-header">
                                         <div class="mobile-nav-logo">
                                             <a href="<?php echo base_url(); ?>">
-                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo-2.svg" alt="Site Logo">
-                                                <img class="dark-mode" src="<?php echo base_url(); ?>assets/media/logo-3.svg" alt="Site Logo">
+                                                <img class="light-mode" src="<?php echo base_url(); ?>assets/media/logo.png" alt="Site Logo">
                                             </a>
                                         </div>
                                         <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
@@ -36,6 +34,8 @@
                                     </li>
                                 
                                     <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                                    <li class="downloadcolor"><a href="<?php echo base_url(); ?>assets/media/pdf/Ourworks.pdf" download >Download Ourservice</a></li>
+
                                 </ul>
                             </nav>
                             <!-- End Mainmanu Nav -->
